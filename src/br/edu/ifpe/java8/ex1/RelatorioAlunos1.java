@@ -39,6 +39,7 @@ public class RelatorioAlunos1 {
 	private static final Map <TipoRelatorio1, Predicate<Aluno>> CONDICAO;
 
 	static {
+
 		CONDICAO = new HashMap();
 		CONDICAO.put(TipoRelatorio1.TODOS, aluno -> true);
 		CONDICAO.put(TipoRelatorio1.APENAS_APROVADOS, aluno -> aluno.getMedia() >= MEDIA_APROVACAO);
